@@ -16,12 +16,10 @@
 </header>
 
 <main>
+<h2>Practice</h2>
 <pre>
-  name: 
-  <?php 
-    //htmlタグをエスケープ
-    //name属性を$_REQUESTで取得
-    print(htmlspecialchars($_REQUEST['my_name'], ENT_QUOTES));
+  <?php
+    print($_COOKIE['save_message']);
   ?>
 </pre>
 </main>

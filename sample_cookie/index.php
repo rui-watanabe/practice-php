@@ -1,3 +1,7 @@
+<?php
+  //第一引数がkey,第二引数がvalue,第三引数が時間
+  setcookie('save_message', 'cookie_data', time() + 60 + 60 + 24 + 14);
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -16,13 +20,9 @@
 </header>
 
 <main>
+<h2>Practice</h2>
 <pre>
-  name: 
-  <?php 
-    //htmlタグをエスケープ
-    //name属性を$_REQUESTで取得
-    print(htmlspecialchars($_REQUEST['my_name'], ENT_QUOTES));
-  ?>
+  <a href="page02.php">to page02</a>
 </pre>
 </main>
 </body>    
