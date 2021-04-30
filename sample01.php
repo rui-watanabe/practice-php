@@ -22,11 +22,12 @@
   $success = file_put_contents('../../news_data/news.txt', '20210101 reload homepage');
   if($success)
   {
-    print("File POST success");
+    $news = file_get_contents('../../news_data/news.txt');
+    print($news);
   }
   else
   {
-    print("File POST failed");
+    print("File PUT failed");
   }
 ?>
 </pre>
