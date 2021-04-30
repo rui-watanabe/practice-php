@@ -19,7 +19,15 @@
 <h2>Practice</h2>
 <pre>
 <?php
-  print("Hello PHP");
+  $success = file_put_contents('../../news_data/news.txt', '20210101 reload homepage');
+  if($success)
+  {
+    print("File POST success");
+  }
+  else
+  {
+    print("File POST failed");
+  }
 ?>
 </pre>
 </main>
